@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+.box {width:100%; height:200px; text-align:center; font-size:30px; background: url(index.jpg); float:left;}
+.img {float:left; margin-left:5px; margin-top:10px; }
+.box2 {width:100%; margin-top:50px; height:500px;  float:left;}
+.box4 {width:24%; height:20px; font-size:30px; margin-top:20px; color:#C09; float:left;  text-align:center;}
+
+.butn { background-color:red;
+      color:white;
+	  border:4px solid black
+                  padding:10px;
+	  font-size:20px;}
+.butn:hover { background:black;
+             color:red;}
+.foot {width:100%; height:500px; background-color:#708090; font-size:30px; float:left; margin-top:60px; color:white; text-align:center;}
+.chg {text-align:left; padding-left:20px;}
+.ms{display:none;}
+</style>
+</head>
+
+<body >
+<div class="box"> Government Of India <img class="img" src="pic9.png" width="250" height="180" /> <p> ISRO  </p> <p> Indian Space Research Organization </p>  </div>
+<div class="box4">
+
+<a href="home.html"><button class= "butn" autofocus="autofocus"> About ISRO </button></a>
+ </div>
+<div class="box4">
+<a href="MISSIONS.html"><button class= "butn" autofocus="autofocus"> Missions </button></a>
+ </div>
+<div class="box4">
+<a href="chandrayaan.html"><button class= "butn" autofocus="autofocus"> Chandrayaan 2 </button> </a>
+ </div>
+<div class="box4">
+<a href="launchers.html"><button class= "butn" autofocus="autofocus"> Launchers </button> </a>
+ </div>
+<div class="box2"> 
+<div class="ms">Slideshow</div>
+<center><img class="mySlides" src="c.jpg" width="100%" height="480"></center>
+<center><img class="mySlides" src="b.jpg"  width="100%" height="480"></center>
+<center><img class="mySlides" src="a.jpg" width="100%" height="480" ></center>
+
+<center><button class=" ms-button ms-black ms-display-left"  onclick="plusDivs(-1)">&#10094</button>
+  <button class="ms-button ms-black ms-display-right" onclick="plusDivs(+1)">&#10095</button></center>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+ </div>
+
+
+
+<div class="foot"> Disclaimer <p> The information contained in this website has been prepared solely for the purpose of information dissemination about India's Space Programme. Though all efforts have been made to ensure the correctness of the content on this Website, the same should not be surmised as a statement of law or used for any legal purposes. ISRO is not responsible for any damages or loss incurred due to the usage of the information appeared in this website.</p> 
+<div class="chg"> Contact No.- 8465551123
+<p> Email Id- www.isro.gov.in</p>
+</div>
+</div>
+
+
+</body>
+</html>
